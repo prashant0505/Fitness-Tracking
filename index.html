@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101613">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Fitness">
+  <meta name="description" content="Your personal fitness plan, meals, workouts and progress — ready offline.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>My Fitness Tracker</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar"><a class="brand" href="#today" aria-label="My Fitness Tracker home"><span class="brand-mark">✳</span><span>FITNESS<span class="brand-sub">YOUR DAILY PRACTICE</span></span></a><button id="theme-toggle" class="icon-button" aria-label="Toggle color theme">◐</button></header>
+    <main id="main" tabindex="-1"></main>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <a href="#today" data-tab="today"><span>◷</span>Today</a><a href="#plan" data-tab="plan"><span>▦</span>Plan</a><a href="#workouts" data-tab="workouts"><span>⌁</span>Train</a><a href="#progress" data-tab="progress"><span>↗</span>Progress</a><a href="#settings" data-tab="settings"><span>⚙</span>Settings</a>
+    </nav>
+  </div>
+  <dialog id="modal"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
